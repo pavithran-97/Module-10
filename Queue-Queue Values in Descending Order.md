@@ -22,7 +22,20 @@ To write a Python program to:
 7. Print the updated list.
 
 ## 🧪 Program: 
-
+```
+from queue import PriorityQueue
+que=PriorityQueue()
+n=int(input())
+l=[]
+for i in range(n):
+l.append(int(input()))
+for number in l:
+que.put((-number, number))
+while not que.empty():
+print(que.get()[1])
+```
 ### Output:
+<img width="287" height="412" alt="image" src="https://github.com/user-attachments/assets/963af4f7-1c82-4e1b-b679-457cb3acd25d" />
 
 ## Result:
+Thus the program has been successfully executed
